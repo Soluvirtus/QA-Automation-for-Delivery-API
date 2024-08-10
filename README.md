@@ -33,6 +33,12 @@ Urban Grocers API Testing requiere Python v3.6+ para ejecutarse.
 Instala las dependencias y ejecuta las pruebas.
 
 ```sh
-Clona el repositorio con SSH.
+#Clona el repositorio con SSH
 git clone git@github.com:username/qa-project-Urban-Grocers-app-es.git
+
+#Instala pytest
 pip install pytest
+
+#Ejecuta las pruebas
+pytest qa-project-Urban-Grocers-app-es
+/create_kit_name_kit_test.py

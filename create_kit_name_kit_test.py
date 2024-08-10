@@ -14,7 +14,7 @@ def get_new_user_token():
         "address": "8042 Lancaster Ave.Hamburg, NY"
     }
     response = create_user(url, user_data)
-    print(f"New user token: {response['authToken']}")
+    #print(f"New user token: {response['authToken']}")
     return response["authToken"]
 
 @pytest.fixture
@@ -27,7 +27,7 @@ def positive_assert(kit_body, auth_token):
     """
     kit_url = f"{URL_SERVICE}{KITS_PATH}"
     response = post_new_client_kit(kit_url, kit_body, auth_token=auth_token)
-    print(f"Positive assert response: {response}")
+    #print(f"Positive assert response: {response}")
     assert response["name"] == kit_body["name"]
 
 def negative_assert_code_400(kit_body, auth_token):
@@ -36,7 +36,6 @@ def negative_assert_code_400(kit_body, auth_token):
     """
     kit_url = f"{URL_SERVICE}{KITS_PATH}"
     response = post_new_client_kit(kit_url, kit_body, auth_token=auth_token)
-    print(f"Negative assert response: {response}")
     assert response.get("code") == 400, f"Expected code 400, but got {response.get('code', response)}"
 
 def test_create_kit_with_min_length_name(auth_token):
@@ -92,7 +91,7 @@ def test_create_kit_without_name(auth_token):
     """
     Prueba para crear un kit sin el parámetro 'name'.
     """
-    kit_body = {}
+    kit_body = get_kit_body("")
     negative_assert_code_400(kit_body, auth_token)
 
 def test_create_kit_with_invalid_name_type(auth_token):

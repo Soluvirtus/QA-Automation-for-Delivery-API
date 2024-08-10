@@ -6,7 +6,7 @@ def create_user(url, user_data):
         "Content-Type": "application/json"
     }
     response = requests.post(url, json=user_data, headers=headers)
-    print(f"Request to {url} with data {user_data} returned {response.status_code}")
+    #print(f"Request to {url} with data {user_data} returned {response.status_code}")
     return response.json()
 
 def post_new_client_kit(url, kit_body, auth_token=None, card_id=None):
@@ -27,5 +27,5 @@ def post_new_client_kit(url, kit_body, auth_token=None, card_id=None):
         kit_body["cardId"] = card_id
 
     response = requests.post(url, json=kit_body, headers=headers)
-    print(f"Request to {url} with data {kit_body} and headers {headers} returned {response.status_code}")
+    #print(f"Request to {url} with data {kit_body} and headers {headers} returned {response.status_code}")
     return response.json()
