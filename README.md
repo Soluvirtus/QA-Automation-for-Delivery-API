@@ -26,8 +26,6 @@ Urban Grocers API Testing utiliza varios proyectos de código abierto para funci
 
 ![Demostración](https://image.jimcdn.com/app/cms/image/transf/none/path/sd910123ed64e5234/image/ief19b0591f7e0897/version/1725607047/image.jpg)
 
-Y, por supuesto, Urban Grocers API Testing es de código abierto con un [repositorio público] [dill] en GitHub.
-
 ## Instalación
 
 Urban Grocers API Testing requiere Python v3.6+ para ejecutarse.
@@ -40,6 +38,9 @@ git clone git@github.com:username/qa-project-Urban-Grocers-app-es.git
 
 #Instala pytest
 pip install pytest
+
+#Instala request
+pip install request
 
 #Ejecuta las pruebas
 pytest qa-project-Urban-Grocers-app-es
