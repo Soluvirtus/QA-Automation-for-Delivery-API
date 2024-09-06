@@ -26,7 +26,7 @@ Urban Grocers API Testing utiliza varios proyectos de código abierto para funci
 
 ![Demostración](https://image.jimcdn.com/app/cms/image/transf/none/path/sd910123ed64e5234/image/ief19b0591f7e0897/version/1725607047/image.jpg)
 
-Y, por supuesto, Urban Grocers API Testing es de código abierto con un [repositorio público][dill] en GitHub.
+Y, por supuesto, Urban Grocers API Testing es de código abierto con un [repositorio público] [dill] en GitHub.
 
 ## Instalación
 
